@@ -1,0 +1,75 @@
+#a{
+    background-color: chocolate;
+    grid-area: a;
+}
+#b{
+    background-color: darkgreen;
+    grid-area: b;
+}
+#c{
+    background-color: rgb(236, 117, 32);
+    grid-area: c;
+}
+#d{
+    background-color: rgb(197, 122, 8);
+    grid-area: d;
+}
+#e{
+    background-color: rgb(6, 85, 26);
+    grid-area: e;
+}
+#f{
+    background-color: rgb(98, 189, 98);
+    grid-area: f;
+}
+#g{
+    background-color: rgb(19, 17, 16);
+    grid-area: g;
+}
+#h{
+    background-color: rgb(214, 113, 18);
+    grid-area: h;
+}
+#i{
+    background-color: rgb(12, 95, 56);
+    grid-area: i;
+}
+#j{
+    background-color: rgb(209, 63, 18);
+    grid-area: j;
+}
+#k{
+    background-color: rgb(9, 104, 29);
+    grid-area: k;
+}
+#l{
+    background-color: rgb(6, 20, 6);
+    grid-area: l;
+}
+#m{
+    background-color: rgb(62, 172, 107);
+    grid-area: m;
+}
+#n{
+    background-color: rgb(167, 91, 20);
+    grid-area: n;
+}
+.Tuhin{
+    display: grid;
+    padding: 5px;
+    background-color: black;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a a b c" "d e f g" "h h i j"
+     "h h k l" "m m m n";
+    height: 50vh;
+    gap: 3px;
+    text-align: center;
+}
+@media only screen and (max-width:650px){
+    .Tuhin{
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr .2fr;
+        grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n";
+    }
+}
